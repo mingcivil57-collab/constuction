@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="ConstructApp" />
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2954/2954848.png" />
+    <title>Construction Project Dashboard</title>
+    <meta name="description" content="A comprehensive construction project monitoring dashboard linked with Google Sheets, supporting multiple fiscal years, plans, projects, contract details, and visual progress tracking." />
+    <meta property="og:title" content="Construction Project Dashboard" />
+    <meta property="og:description" content="A comprehensive construction project monitoring dashboard linked with Google Sheets, supporting multiple fiscal years, plans, projects, contract details, and visual progress tracking." />
+    <script>
+      window.onerror = function(message, source, lineno, colno, error) {
+        if (message === 'Script error.' || message === 'Script error' || (!source && !lineno)) {
+          console.warn('Cross-origin script error suppressed:', message);
+          return true;
+        }
+        return false;
+      };
+      window.addEventListener('error', function(event) {
+        if (event.message === 'Script error.' || event.message === 'Script error' || (!event.filename && !event.lineno)) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+        }
+      }, true);
+      window.addEventListener('unhandledrejection', function(event) {
+        if (event.reason && (event.reason.message === 'Script error.' || String(event.reason).includes('Script error'))) {
+          event.preventDefault();
+        }
+      });
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,6 @@
+{
+  "name": "Construction Project Dashboard",
+  "description": "A comprehensive construction project monitoring dashboard linked with Google Sheets, supporting multiple fiscal years, plans, projects, contract details, and visual progress tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
